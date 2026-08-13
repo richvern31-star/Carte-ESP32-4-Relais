@@ -35,7 +35,7 @@ L'état des relais est synchronisé en temps réel sur la page web via une requ�
 `1, 2, 3, 4, 5, 12, 13, 14, 15, 16, 17, 18, 19, 21, 22, 23, 25, 26, 27, 32, 33`
 (GPIO 34, 35, 36, 39 : entrée seule uniquement)
 
-À éviter : `0, 6, 7, 8, 9, 10, 11` (non utilisables) — GPIO `20, 24, 28, 29, 30, 31, 37, 38` non présents sur cette puce.
+À éviter : `0, 6, 7, 8, 9, 10, 11` (non utilisables) — GPIO `20, 24, 28, 29, 30, 31, 37, 38` non présents sur cette carte.
 
 ## Fonctionnalités
 
