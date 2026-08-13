@@ -6,7 +6,7 @@ Contrôleur de relais WiFi pour ESP32, piloté via une page web intégrée (serv
 
 Ce programme transforme une carte **ESP32-WROOM (ESP-32D Dev Module)** en serveur web local capable de piloter **4 relais** (ex : Salon, Cuisine, Jardin, Portail) :
 
-- depuis un navigateur (PC, smartphone) sur le réseau local, via une interface web responsive avec boutons ON/OFF ;
+- depuis un navigateur (PC, smartphone) sur le réseau local, via une interface web responsive avec boutons ON/OFF
 - directement en local via **4 boutons poussoir physiques**, indépendamment du WiFi.
 
 L'état des relais est synchronisé en temps réel sur la page web via une requête AJAX toutes les 500 ms, et affiche aussi la qualité du signal WiFi (RSSI en dBm et en %).
