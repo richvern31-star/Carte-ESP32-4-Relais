@@ -20,7 +20,7 @@ const char* NOM_PANNEAU_CENTRAL = "Serveur Local"; // Nom du panneau affiché su
 const char* MA_CARTE = "Module Relais 4 Canaux";// 🟡🟢
 
 // 🔴 Repere 2
-// Structure associant chaque broche GPIO à son nom affiché : plus besoin de synchroniser
+// Structure associant chaque broche GPIO à son nom affiché : pas besoin de synchroniser
 // deux tableaux séparés (PINS[] et NOMS[]) — pin et nom sont liés sur la même ligne.
 struct Sortie {
   byte pin;
