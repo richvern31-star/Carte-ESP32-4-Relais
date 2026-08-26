@@ -50,12 +50,12 @@ struct Bouton {
   unsigned long dernierChangement; // Horodatage du dernier changement détecté (anti-rebond)
 };
 // 🔴 Repere 2c
-// Association Bouton -> Relais : BP15->GPIO 25, BP16->GPIO 26, BP22->GPIO 32, BP23->GPIO 33
+// Association Bouton -> Relais : BP14->GPIO 32, BP16->GPIO 33, BP17->GPIO 25, BP18->GPIO 26
 Bouton BOUTONS[] = {
   {14, 32, HIGH, HIGH, 0},
   {16, 33, HIGH, HIGH, 0},
-  {22, 25, HIGH, HIGH, 0},
-  {23, 26, HIGH, HIGH, 0}
+  {17, 25, HIGH, HIGH, 0},
+  {18, 26, HIGH, HIGH, 0}
 };
 
 // Calcule automatiquement le nombre de boutons à partir de BOUTONS[]
