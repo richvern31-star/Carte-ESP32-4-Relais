@@ -15,14 +15,14 @@ L'état des relais est synchronisé en temps réel sur la page web via une requ�
 
 | Élément | GPIO | Rôle |
 |---|---|---|
-| Relais 1 | 25 | Salon |
-| Relais 2 | 26 | Cuisine |
-| Relais 3 | 32 | Jardin |
-| Relais 4 | 33 | Portail |
-| Bouton poussoir 1 | 15 | Bascule Relais 25 (Salon) |
-| Bouton poussoir 2 | 16 | Bascule Relais 26 (Cuisine) |
-| Bouton poussoir 3 | 22 | Bascule Relais 32 (Jardin) |
-| Bouton poussoir 4 | 23 | Bascule Relais 33 (Portail) |
+| Relais 1 | 25 | Relais K1 |
+| Relais 2 | 26 | Relais K2 |
+| Relais 3 | 32 | Relais K3 |
+| Relais 4 | 33 | Relais K4 |
+| Bouton poussoir 1 | 14 | Bascule Relais 32 (Relais K1) |
+| Bouton poussoir 2 | 16 | Bascule Relais 33 (Relais K2) |
+| Bouton poussoir 3 | 17 | Bascule Relais 25 (Relais K3) |
+| Bouton poussoir 4 | 18 | Bascule Relais 26 (Relais K4) |
 
 **Câblage des boutons poussoir** : chaque bouton relie sa broche GPIO à la masse (**GND**). Les entrées sont configurées en `INPUT_PULLUP` (résistance de tirage interne activée), donc :
 - au repos → la broche lit **HIGH** ;
@@ -81,10 +81,10 @@ Il suffit de modifier le tableau `SORTIES[]` dans le code — le nombre de sorti
 
 ```cpp
 const Sortie SORTIES[] = {
-  {25, "Salon"},
-  {26, "Cuisine"},
-  {32, "Jardin"},
-  {33, "Portail"}
+  {32, "Relais K1"},
+  {33, "Relais K2"},
+  {25, "Relais K3"},
+  {26, "Relais K4"}
 };
 ```
 
@@ -92,10 +92,10 @@ De même pour les boutons poussoir, via le tableau `BOUTONS[]` :
 
 ```cpp
 Bouton BOUTONS[] = {
-  {15, 25, HIGH, HIGH, 0},   // BP GPIO15 -> Relais GPIO25
-  {16, 26, HIGH, HIGH, 0},   // BP GPIO16 -> Relais GPIO26
-  {22, 32, HIGH, HIGH, 0},   // BP GPIO22 -> Relais GPIO32
-  {23, 33, HIGH, HIGH, 0}    // BP GPIO23 -> Relais GPIO33
+  {14, 32, HIGH, HIGH, 0},   // BP GPIO14 -> Relais GPIO33
+  {16, 33, HIGH, HIGH, 0},   // BP GPIO16 -> Relais GPIO33
+  {17, 25, HIGH, HIGH, 0},   // BP GPIO17 -> Relais GPIO25
+  {18, 26, HIGH, HIGH, 0}    // BP GPIO18 -> Relais GPIO26
 };
 ```
 
