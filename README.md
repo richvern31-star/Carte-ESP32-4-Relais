@@ -15,10 +15,10 @@ L'état des relais est synchronisé en temps réel sur la page web via une requ�
 
 | Élément | GPIO | Rôle |
 |---|---|---|
-| Relais 1 | 25 | Relais K1 |
-| Relais 2 | 26 | Relais K2 |
-| Relais 3 | 32 | Relais K3 |
-| Relais 4 | 33 | Relais K4 |
+| Relais 1 | 32 | Relais K1 |
+| Relais 2 | 33 | Relais K2 |
+| Relais 3 | 25 | Relais K3 |
+| Relais 4 | 26 | Relais K4 |
 | Bouton poussoir 1 | 14 | Bascule Relais 32 (Relais K1) |
 | Bouton poussoir 2 | 16 | Bascule Relais 33 (Relais K2) |
 | Bouton poussoir 3 | 17 | Bascule Relais 25 (Relais K3) |
