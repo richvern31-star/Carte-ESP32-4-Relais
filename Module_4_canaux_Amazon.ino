@@ -28,10 +28,10 @@ struct Sortie {
 };
 // Pilotage des 4 relais
 const Sortie SORTIES[] = {
-  {25, "Salon"},
-  {26, "Cuisine"},
-  {32, "Jardin"},
-  {33, "Portail"}
+  {32, "Salon"},
+  {33, "Cuisine"},
+  {25, "Jardin"},
+  {26, "Portail"}
 };
 
 // Calcule automatiquement le nombre de sorties à partir de SORTIES[]
@@ -52,10 +52,10 @@ struct Bouton {
 // 🔴 Repere 2c
 // Association Bouton -> Relais : BP15->GPIO 25, BP16->GPIO 26, BP22->GPIO 32, BP23->GPIO 33
 Bouton BOUTONS[] = {
-  {15, 25, HIGH, HIGH, 0},
-  {16, 26, HIGH, HIGH, 0},
-  {22, 32, HIGH, HIGH, 0},
-  {23, 33, HIGH, HIGH, 0}
+  {14, 32, HIGH, HIGH, 0},
+  {16, 33, HIGH, HIGH, 0},
+  {22, 25, HIGH, HIGH, 0},
+  {23, 26, HIGH, HIGH, 0}
 };
 
 // Calcule automatiquement le nombre de boutons à partir de BOUTONS[]
