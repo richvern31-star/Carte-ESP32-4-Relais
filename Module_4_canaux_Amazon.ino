@@ -28,10 +28,10 @@ struct Sortie {
 };
 // Pilotage des 4 relais
 const Sortie SORTIES[] = {
-  {32, "Salon"},
-  {33, "Cuisine"},
-  {25, "Jardin"},
-  {26, "Portail"}
+  {32, "Relais K1"},
+  {33, "Relais K2"},
+  {25, "Relais K3"},
+  {26, "Relais K4"}
 };
 
 // Calcule automatiquement le nombre de sorties à partir de SORTIES[]
